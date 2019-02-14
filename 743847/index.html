@@ -3,58 +3,76 @@
 <head>
     <meta charset="utf-8" />
     <title>743847</title>
-    
+
     <script>
-        /*function addNumbers(countUpTo) {
+                /*function addNumbers(countUpTo) {
 
-            sum = 0;
-            for (i = 0; i < countUpTo; i++)
-            {
-                sum += i;
-            }
+                    sum = 0;
+                    for (i = 0; i < countUpTo; i++)
+                    {
+                        sum += i;
+                    }
 
-            return sum;
-        }*/
+                    return sum;
+                }*/
 
-       /* function addNumbers(countUpTo)
-        {
+               /* function addNumbers(countUpTo)
+                {
 
-            sum = 0;
-            i = 0;
-            while (i < countUpTo)
-            {
-                sum += i;
-                i++;
-            }
-            return sum;
-        }*/
+                    sum = 0;
+                    i = 0;
+                    while (i < countUpTo)
+                    {
+                        sum += i;
+                        i++;
+                    }
+                    return sum;
+                }*/
 
-        var rows = prompt("How many rows for your multiplication table?");
-        var cols = prompt("How many columns for your multiplication table?");
-        if (rows == "" || rows == null)
-            rows = 10;
-        if (cols == "" || cols == null)
-            cols = 10;
-        createTable(rows, cols);
-        function createTable(rows, cols) {
-            var j = 1;
-            var output = "<table border = '1' width = '500' cellspacing = '0' cellpadding = '5'>";
-            for (i = 1; i <= rows; i++) {
-                output = output + "<tr>";
-                while (j <= cols) {
-                    output = output + "<td>" + i * j + "</td>";
-                    j = j + 1;
+                /* var rows = prompt("How many rows for your multiplication table?");
+                var cols = prompt("How many columns for your multiplication table?");
+                if (rows == "" || rows == null)
+                    rows = 10;
+                if (cols == "" || cols == null)
+                    cols = 10;
+                createTable(rows, cols);
+                function createTable(rows, cols) {
+                    var j = 1;
+                    var output = "<table border = '1' width = '500' cellspacing = '0' cellpadding = '5'>";
+                    for (i = 1; i <= rows; i++) {
+                        output = output + "<tr>";
+                        while (j <= cols) {
+                            output = output + "<td>" + i * j + "</td>";
+                            j = j + 1;
+                        }
+                        output = output + "</tr>";
+                        j = 1;
+                    }
+                    output = output + "</table>";
+                    document.write(output);
+                }*/
+
+            function trigger() {
+                document.getElementById("hover").addEventListener("mouseover", popup);
+                function popup() {
+                    alert("Welcome To My WebPage!!");
                 }
-                output = output + "</tr>";
-                j = 1;
-            }
-            output = output + "</table>";
-            document.write(output);
-        }
 
+            }
     </script>
+    <style>
+        p {
+            font-size: 50px;
+            position: fixed;
+            left: 550px;
+            top: 300px;
+        }
+    </style>
 </head>
-<body>
+<body onload="trigger();">
+    <p id="hover"><img src=https://www.filmibeat.com/img/2016/05/07-1462612982-shaktimaan1.jpg alt="No Internet Available" height="190" width="190"></p>
 
 </body>
 </html>
+
+
